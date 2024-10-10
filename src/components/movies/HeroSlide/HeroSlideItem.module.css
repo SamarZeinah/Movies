@@ -1,0 +1,48 @@
+
+.sliderbox {
+    width: 100%;
+    height: 80vh; 
+    overflow: hidden; 
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; 
+}
+
+.leftpart {
+    flex: 1;
+    padding: 20px;
+    color: white;
+}
+
+.rightpart {
+    flex: 1;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.rightpart img {
+    border-radius: 20px; 
+    width: auto; 
+    height: 70%; 
+    max-width: 100%; 
+    object-fit: cover; 
+}
+
+@media (max-width: 768px) {
+    .slider {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .leftpart, .rightpart {
+        padding: 10px; 
+    }
+    .rightpart img {
+        height: auto; 
+        max-height: 300px; 
+    }
+}
