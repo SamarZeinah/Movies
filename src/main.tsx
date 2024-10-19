@@ -5,8 +5,8 @@ import Mainlayout from './layouts/mainlayout'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Home from './pages/Home';
 import Catalog from './pages/Catalog';
-import Detail from './pages/Detail';
-import { store, Store } from './Store/Appstore';
+import MovieDetails from './pages/MovieDetails';
+import { store } from './Store/Appstore';
 import { Provider } from 'react-redux';
 const Router=createBrowserRouter([
     {
@@ -22,8 +22,8 @@ element:<Mainlayout/>,
                         element:<Catalog/>
                     },
                     {
-                        path:"Detail",
-                        element:<Detail/>
+                        path:"MovieDetails/:id",
+                        element:<MovieDetails/>
                     },
         ]
 

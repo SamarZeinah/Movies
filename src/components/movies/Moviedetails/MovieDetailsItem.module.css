@@ -1,0 +1,141 @@
+/* .Background {
+   position: absolute; 
+   top: 0; 
+   left: 0;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   height: 60vh; 
+   background-size: cover; 
+   background-position: center; 
+   background-repeat: no-repeat;
+   z-index: -1;
+} */
+ .firstcontent{
+    display: flex;
+justify-content: space-between;
+gap: 100px;
+margin-top: 10%;
+ }
+
+ .firstcontent .poster img{
+    /* margin-top: 15px; */
+    width: 350px;
+    height: 600px;
+    border-radius: 50px;
+ }
+ .firstcontent .info h1{
+font-size: 60px;
+font-weight: bold;
+color: white;
+margin-bottom: 30px;
+
+ }
+ 
+ .firstcontent .info h5 span{
+    display: inline-block;    
+   padding: .5rem 1.5rem;
+   border: 2px solid #fff;
+   border-radius: 30px;
+   font-size: .8rem;
+   font-weight: 600;
+   background-color: #0f0f0f;
+   margin-right: 15px;
+ }
+ .castsection h3{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+ }
+ .Castsinfo{
+    display: flex;
+    gap: 20px;
+ }
+ .Castsinfo img{
+    width: 130px;
+    height: 170px;
+    border-radius: 20px;
+ }
+ .Castsinfo p{
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+ }
+
+ .videocontainer {
+   position: relative;
+}
+
+.carousel {
+   width: 100%;
+}
+
+.trendimage {
+   width: 300px;
+   height: 400px;
+   border-radius: 50px;
+   padding: 7px;
+   position: relative;
+}
+
+.secondcontent{
+   margin-top: 100px;
+}
+.secondcontent video{
+   padding-top: 100px;
+
+}
+.Thirdcontent p{
+   margin-top: 50px;
+   font-size: 30px;
+   font-weight: bold;
+}
+.videocontainer::after {
+   content: "";
+   position: absolute;
+   top: 7px; 
+   left: 7px;
+   right: 0; 
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.5);
+   opacity: 0;
+   transition: opacity 0.3s ease;
+   width: 286px;
+   height: 386px;
+   border-radius: 40px;
+}
+
+.videocontainer:hover::after {
+   opacity: 1;
+}
+
+.youtubeIcon {
+   position: absolute; 
+   top: 43%; 
+   left: 50%; 
+   transform: translate(-50%, -50%);
+   width: 100px; 
+   height: auto; 
+   transition: opacity 0.3s;
+   opacity: 0;
+}
+
+.videocontainer:hover .youtubeIcon {
+   opacity: 1;
+}
+.videocontainer:hover{
+   color: red;
+
+}
+
+.youtubeIcon:hover {
+   transform: scale(1.1);
+}
+
+.imagetitle {
+   padding-top: 20px;
+}
+
+
+
+

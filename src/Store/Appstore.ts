@@ -1,7 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import  HeroslideSlice from './Heroslide/HeroslideSlice'
+import DetailsSlice from './Details/DetailsSlice'
 export const store = configureStore({
-  reducer: {HeroslideSlice},
+  reducer: {
+    Heroslide: HeroslideSlice,
+    DetailSlide:DetailsSlice,
+  },
 })
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

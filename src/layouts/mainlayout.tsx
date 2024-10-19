@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {Container} from 'react-bootstrap';
 import Header from '../components/common/Header/Header';
 import Footer from '../components/common/Footer/Footer'; 
@@ -8,7 +8,7 @@ const {container, wrapperr} = styles;
 
 const Mainlayout = () => {
   return (
-    <Container className={container}>
+    <Container  fluid className={container}>
         <Header/>
         <div className={wrapperr}>
             <Outlet/>

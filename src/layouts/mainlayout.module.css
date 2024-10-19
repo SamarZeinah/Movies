@@ -2,8 +2,12 @@
 height: 100vh;
 display: flex;
 flex-direction: column;
+padding: 0 ;
+margin: auto;
+
+
 }
-.wrapperr{
-    margin-top: 30px;
+.wrapperr {
+    background-color: black;
 
 }
